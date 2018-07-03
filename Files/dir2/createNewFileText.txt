@@ -1,0 +1,8 @@
+ public static void createNewFile(String path, String name) {
+        File file = new File(path, name);
+        try {
+            file.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }

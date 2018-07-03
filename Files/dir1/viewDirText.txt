@@ -1,0 +1,9 @@
+public static void viewDir(File dir) {
+        for (File item : dir.listFiles()) {
+            if (dir.isDirectory()) {
+                System.out.println("directory " + item);
+            } else {
+                System.out.println("file " + item);
+            }
+        }
+    }
